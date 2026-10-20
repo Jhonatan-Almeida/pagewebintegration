@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hola Mundo - Jhonatan Almeida | Página de Prueba</title>
+  <meta name="description" content="Página de prueba moderna e interactiva diseñada para Jhonatan Almeida con efectos visuales avanzados, glassmorphism y microinteracciones.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background lighting -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+  <div class="grid-overlay"></div>
+
+  <main class="page-container">
+    <section class="hero-card" id="interactive-card">
+      <div class="card-glow" id="card-glow"></div>
+      
+      <div class="card-content">
+        <!-- Status Badge -->
+        <div class="badge-wrapper">
+          <span class="status-indicator"></span>
+          <span class="badge-text">Página de prueba activa</span>
+          <span class="badge-pill" id="live-time">--:--:--</span>
+        </div>
+
+        <!-- Main Title -->
+        <div class="header-group">
+          <span class="welcome-label">¡Bienvenido!</span>
+          <h1 class="main-title" id="main-greeting">
+            Hola mundo <br>
+            <span class="gradient-text">Jhonatan Almeida</span>
+          </h1>
+        </div>
+
+        <!-- Description -->
+        <p class="description">
+          Esta es una página de prueba interactiva creada con una estética moderna: gradientes dinámicos, 
+          efectos de vidrio <em>(glassmorphism)</em>, iluminación reactiva al cursor y microinteracciones fluidas.
+        </p>
+
+        <!-- Feature Pills -->
+        <div class="tech-stack" aria-label="Tecnologías destacadas">
+          <span class="tech-tag" id="tag-html">
+            <span class="tag-icon">⚡</span> HTML5 Semántico
+          </span>
+          <span class="tech-tag" id="tag-css">
+            <span class="tag-icon">🎨</span> CSS3 Moderno
+          </span>
+          <span class="tech-tag" id="tag-glass">
+            <span class="tag-icon">✨</span> Glassmorphism
+          </span>
+          <span class="tech-tag" id="tag-js">
+            <span class="tag-icon">🚀</span> JS Dinámico
+          </span>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="actions-group">
+          <button type="button" class="btn btn-primary" id="btn-copy">
+            <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span id="btn-copy-text">Copiar Saludo</span>
+          </button>
+
+          <button type="button" class="btn btn-secondary" id="btn-interact">
+            <span class="sparkle-icon">✨</span>
+            <span>Efecto Glow</span>
+          </button>
+        </div>
+
+        <!-- Quick Stats / Info Footer -->
+        <div class="card-footer">
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Responsive</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">60 FPS</span>
+            <span class="stat-label">Animaciones fluidas</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">Ultra</span>
+            <span class="stat-label">Dark Theme</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" role="alert" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span class="toast-message" id="toast-message">Texto copiado al portapapeles</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
